@@ -642,6 +642,7 @@ footer .row {
 	display: block;
 	margin:auto;
 	padding-top: 100px;
+  overflow: hidden;
 }
 .content-aboutsection{
 	float: left;
@@ -654,7 +655,6 @@ footer .row {
 .image-aboutsection .about-img{
 	width: 100%;
 	height: auto;
-  overflow: hidden;
 }
 .content-aboutsection .title{
 	text-transform: uppercase;
