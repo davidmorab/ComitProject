@@ -654,6 +654,7 @@ footer .row {
 .image-aboutsection .about-img{
 	width: 100%;
 	height: auto;
+  overflow: hidden;
 }
 .content-aboutsection .title{
 	text-transform: uppercase;
