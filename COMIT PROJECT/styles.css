@@ -714,7 +714,7 @@ footer .row {
 }
 .image-aboutsection{
 	float: none;
-	width: 100;
+	width: 100%;
 	
 }
 .image-aboutsection .about-img{
@@ -919,7 +919,7 @@ footer .row {
 	box-shadow: 0 0 20px 9px #ff61241f;
 	border-radius: 30px;
 }
-.togglelogin-btn
+.toggle-btn
 {
 	padding:10px 30px;
 	cursor:pointer;
@@ -928,7 +928,7 @@ footer .row {
 	outline: none;
 	position: relative;
 }
-#signup-btn
+#btn
 {
 	top: 0;
 	left:0;
@@ -1023,4 +1023,8 @@ footer .row {
   box-shadow: 2px 2px 2px #333333;
   padding: 5px;
   border-radius: 5px;
+}
+
+.header-mod{
+  min-height: 120px;
 }

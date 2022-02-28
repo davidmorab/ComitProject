@@ -27,7 +27,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header" id="header">
+    <header class="header header-mod" id="header">
       <div class="navigation">
         <div class="nav-center container d-flex">
           <a href="index.html" class="logo"><h1>RentCA</h1></a>
@@ -62,12 +62,11 @@
       <div id='login-form'class='login-page'>
         <!---Creating the form-box-->
         <div class="form-box">
-            <div class='button-box'>
-                <div id='signup-btn'>
-                <button type='button'onclick='login()'class='togglelogin-btn'>Log In</button>
-                <button type='button'onclick='register()'class='togglelogin-btn'>Register</button>
-              </div>
-            </div>
+          <div class='button-box'>
+              <div id='btn'></div>
+              <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+              <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+          </div>
 
             <!---creating login box-->
             <form id='login' class='input-group-login'>
@@ -94,6 +93,35 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/index.js"></script>
+
+    
+    <script>
+      var x=document.getElementById('login');
+  var y=document.getElementById('register');
+  var z=document.getElementById('btn');
+  function register()
+  {
+    x.style.left='-400px';
+    y.style.left='50px';
+    z.style.left='110px';
+  }
+  function login()
+  {
+    x.style.left='50px';
+    y.style.left='450px';
+    z.style.left='0px';
+  }
+</script>
+<script>
+      var modal = document.getElementById('login-form');
+      window.onclick = function(event) 
+      {
+          if (event.target == modal) 
+          {
+              modal.style.display = "none";
+          }
+      }
+  </script>
   
   
   </html>
