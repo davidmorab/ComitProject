@@ -94,7 +94,7 @@ img {
 }
 
 .nav-center .nav-link:hover {
-  color: var(--green);
+  color: red;
 }
 
 .nav-center .hamburger {
@@ -750,7 +750,7 @@ footer .row {
 
 .contact-body{
   min-height: 100vh;
-  background: url(./images/mountains.jpg);
+  background: url(./images/Calgary\ contact.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
