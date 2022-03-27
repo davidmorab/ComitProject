@@ -599,7 +599,7 @@ footer .row {
 
 .footer .col a {
   color: var(--white);
-  font-size: 1.5rem;
+  font-size: 2.5 rem;
   padding: 0.5rem;
   font-weight: 300;
 }
@@ -614,7 +614,6 @@ footer .row {
     row-gap: 3rem;
   }
 }
-
 
 
 
