@@ -1,0 +1,60 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // Boxicons
+  link(href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet')
+  // Font Awesome
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css')
+  // Swiper js
+  link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
+  // Custom StyleSheet
+  link(rel='stylesheet' href='../public/styles.css')
+  title RentCA Contact us
+  link(rel='icon' type='image/x-icon' href='../docs/images/favicon.ico')
+// Header
+header#header.header
+  .navigation
+    .nav-center.container.d-flex
+      a.logo(href='index.html')
+        h1 RentCA
+      ul.nav-list.d-flex
+        li.nav-item
+          a.nav-link(href='index.html') Home
+        li.nav-item
+          a.nav-link(href='about.html') About Us
+        li.nav-item
+          a.nav-link(href='properties.html') Properties
+        li.nav-item
+          a.nav-link(href='contact.html') Contact
+        li.nav-item
+          a.nav-link(href='signup.html') Sign Up
+      .hamburger
+        i.bx.bx-menu-alt-left
+  // contact section start
+  .contact-section
+    .contact-info
+      div
+        i.fas.fa-map-marker-alt
+        | Address, City, Country
+      div
+        i.fas.fa-envelope
+        | contact@email.com
+      div
+        i.fas.fa-phone
+        | +00 0000 000 000
+      div
+        i.fas.fa-clock
+        | Mon Fri 8:00 AM to 5:00 PM
+    .contact-form
+      h2 Contact Us
+      form.contact-box(action='' method='post')
+        input.text-box(type='text' name='name' placeholder='Your Name' required='')
+        input.text-box(type='email' name='email' placeholder='Your Email' required='')
+        textarea(name='message' rows='5' placeholder='Your Message' required='')
+        input.send-btn(type='submit' name='submit' value='Send')
+  // contact section end
+script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+script(src='../docs/js/slider.js')
+script(src='../docs/js/index.js')

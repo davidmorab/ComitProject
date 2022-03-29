@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
+  },
+  "name": "comitproject",
+  "version": "1.0.0",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmorab/ComitProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidmorab/ComitProject/issues"
+  },
+  "homepage": "https://github.com/davidmorab/ComitProject#readme",
+  "description": ""
+}

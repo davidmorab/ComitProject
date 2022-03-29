@@ -1,0 +1,84 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // Boxicons
+  link(href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet')
+  // Font Awesome
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css')
+  // Swiper js
+  link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
+  // Custom StyleSheet
+  link(rel='stylesheet' href='../public/styles.css')
+  title RentCA About us
+  link(rel='icon' type='image/x-icon' href='../docs/images/favicon.ico')
+// Header
+header#header.header
+  .navigation
+    .nav-center.container.d-flex
+      a.logo(href='index.html')
+        h1 RentCA
+      ul.nav-list.d-flex
+        li.nav-item
+          a.nav-link(href='index.html') Home
+        li.nav-item
+          a.nav-link(href='about.html') About Us
+        li.nav-item
+          a.nav-link(href='properties.html') Properties
+        li.nav-item
+          a.nav-link(href='contact.html') Contact
+        li.nav-item
+          a.nav-link(href='signup.html') Sign Up
+      .hamburger
+        i.bx.bx-menu-alt-left
+  .about-section
+    .about-container
+      .content-aboutsection
+        .title
+          h1 About Us
+        .about-text-content
+          h3 Lorem ipsum dolor sit amet, consectetur adipisicing
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            | consequat.
+          .about-button
+            a(href='index.html') Read More
+        .social
+          a(href='https://www.facebook.com')
+            i.fab.fa-facebook-f
+          a(href='https://www.twitter.com')
+            i.fab.fa-twitter
+          a(href='https://www.instagram.com')
+            i.fab.fa-instagram
+      .image-aboutsection
+        img.about-img(src='../docs/images/aboutUS picture.jpg')
+  // Footer
+  footer.footer
+    .row
+      .col.d-flex
+        h4 INFORMATION
+        a(href='about.html') About us
+        a(href='contact.html') Contact Us
+        a(href='properties.html') Properties
+        a(href='signup.html') Sign up or sign in!
+      .col.d-flex
+        h4 USEFUL LINK
+        a(href='') Online Store
+        a(href='') Customer Services
+        a(href='') Promotion
+        a(href='') Top Brands
+      .col.d-flex
+        a.footer-btn(href='https://www.facebook.com')
+          i.bx.bxl-facebook-square
+        a.footer-btn(href='https://www.instagram.com')
+          i.bx.bxl-instagram-alt
+        a.footer-btn(href='https://www.github.com/davidmorab')
+          i.bx.bxl-github
+        a.footer-btn(href='https://www.twitter.com')
+          i.bx.bxl-twitter
+script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+script(src='../docs/js/slider.js')
+script(src='../docs/js/index.js')

@@ -1,0 +1,86 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // Boxicons
+  link(href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet')
+  // Font Awesome
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css')
+  // Swiper js
+  link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
+  // Custom StyleSheet
+  link(rel='stylesheet' href='../public/styles.css')
+  title RentCA Sign up &amp; login
+  link(rel='icon' type='image/x-icon' href='../docs/images/favicon.ico')
+// Header
+header#header.header.header-mod
+  .navigation
+    .nav-center.container.d-flex
+      a.logo(href='index.html')
+        h1 RentCA
+      ul.nav-list.d-flex
+        li.nav-item
+          a.nav-link(href='index.html') Home
+        li.nav-item
+          a.nav-link(href='about.html') About Us
+        li.nav-item
+          a.nav-link(href='properties.html') Properties
+        li.nav-item
+          a.nav-link(href='contact.html') Contact
+        li.nav-item
+          a.nav-link(href='signup.html') Sign Up
+      .hamburger
+        i.bx.bx-menu-alt-left
+// --Login and sign up form
+#login-form.login-page
+  // -Creating the form-box
+  .form-box
+    .button-box
+      #btn
+      button.toggle-btn(type='button' onclick='login()') Log In
+      button.toggle-btn(type='button' onclick='register()') Register
+    // -creating login box
+    form#login.input-group-login
+      input.input-field(type='text' placeholder='Email Id' required='')
+      input.input-field(type='password' placeholder='Enter Password' required='')
+      input.check-box(type='checkbox')
+      span.span-rememberpassword Remember Password
+      button.submit-btn(type='submit') Log in
+    // --creating registration box
+    form#register.input-group-register
+      input.input-field(type='text' placeholder='First Name' required='')
+      input.input-field(type='text' placeholder='Last Name ' required='')
+      input.input-field(type='email' placeholder='Email Id' required='')
+      input.input-field(type='password' placeholder='Enter Password' required='')
+      input.input-field(type='password' placeholder='Confirm Password' required='')
+      input.check-box(type='checkbox')
+      span.span-agreeterms I agree to the terms and conditions
+      button.submit-btn(type='submit') Register
+script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+script(src='../docs/js/slider.js')
+script(src='../docs/js/index.js')
+script.
+  var x=document.getElementById('login');
+  var y=document.getElementById('register');
+  var z=document.getElementById('btn');
+  function register()
+  {
+  x.style.left='-400px';
+  y.style.left='50px';
+  z.style.left='110px';
+  }
+  function login()
+  {
+  x.style.left='50px';
+  y.style.left='450px';
+  z.style.left='0px';
+  }
+script.
+  var modal = document.getElementById('login-form');
+  window.onclick = function(event)
+  {
+  if (event.target == modal)
+  {;
+  }
+  }
