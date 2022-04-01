@@ -10,26 +10,26 @@ head
   // Swiper js
   link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
   // Custom StyleSheet
-  link(rel='stylesheet' href='../public/styles.css')
+  link(rel='stylesheet' href='/styles.css')
   title RentCA Sign up &amp; login
-  link(rel='icon' type='image/x-icon' href='../public/images/favicon.ico')
+  link(rel='icon' type='image/x-icon' href='/images/favicon.ico')
 // Header
 header#header.header.header-mod
   .navigation
     .nav-center.container.d-flex
-      a.logo(href='index.pug')
+      a.logo(href='/index')
         h1 RentCA
       ul.nav-list.d-flex
         li.nav-item
-          a.nav-link(href='index.pug') Home
+          a.nav-link(href='/index') Home
         li.nav-item
-          a.nav-link(href='about.pug') About Us
+          a.nav-link(href='/about') About Us
         li.nav-item
-          a.nav-link(href='properties.pug') Properties
+          a.nav-link(href='/properties') Properties
         li.nav-item
-          a.nav-link(href='contact.pug') Contact
+          a.nav-link(href='/contact') Contact
         li.nav-item
-          a.nav-link(href='signup.pug') Sign Up
+          a.nav-link(href='/signup') Sign Up
       .hamburger
         i.bx.bx-menu-alt-left
 // --Login and sign up form
@@ -58,8 +58,8 @@ header#header.header.header-mod
       span.span-agreeterms I agree to the terms and conditions
       button.submit-btn(type='submit') Register
 script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
-script(src='../public/js/slider.js')
-script(src='../public/js/index.js')
+script(src='/js/slider.js')
+script(src='/js/index.js')
 script.
   var x=document.getElementById('login');
   var y=document.getElementById('register');

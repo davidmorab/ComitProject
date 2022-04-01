@@ -10,26 +10,26 @@ head
   // Swiper js
   link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
   // Custom StyleSheet
-  link(rel='stylesheet' href='../public/styles.css')
+  link(rel='stylesheet' href='/styles.css')
   title RentCA About us
-  link(rel='icon' type='image/x-icon' href='../public/images/favicon.ico')
+  link(rel='icon' type='image/x-icon' href='/images/favicon.ico')
 // Header
 header#header.header
   .navigation
     .nav-center.container.d-flex
-      a.logo(href='index.pug')
+      a.logo(href='/index')
         h1 RentCA
       ul.nav-list.d-flex
         li.nav-item
-          a.nav-link(href='index.pug') Home
+          a.nav-link(href='/index') Home
         li.nav-item
-          a.nav-link(href='about.pug') About Us
+          a.nav-link(href='/about') About Us
         li.nav-item
-          a.nav-link(href='properties.pug') Properties
+          a.nav-link(href='/properties') Properties
         li.nav-item
-          a.nav-link(href='contact.pug') Contact
+          a.nav-link(href='/contact') Contact
         li.nav-item
-          a.nav-link(href='signup.pug') Sign Up
+          a.nav-link(href='/signup') Sign Up
       .hamburger
         i.bx.bx-menu-alt-left
   .about-section
@@ -45,7 +45,7 @@ header#header.header
             | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             | consequat.
           .about-button
-            a(href='index.pug') Read More
+            a(href='/index') Read More
         .social
           a(href='https://www.facebook.com')
             i.fab.fa-facebook-f
@@ -54,16 +54,16 @@ header#header.header
           a(href='https://www.instagram.com')
             i.fab.fa-instagram
       .image-aboutsection
-        img.about-img(src='../public/images/aboutUS picture.jpg')
+        img.about-img(src='/images/aboutUS picture.jpg')
   // Footer
   footer.footer
     .row
       .col.d-flex
         h4 INFORMATION
-        a(href='about.pug') About us
-        a(href='contact.pug') Contact Us
-        a(href='properties.pug') Properties
-        a(href='signup.pug') Sign up or sign in!
+        a(href='/about') About us
+        a(href='/contact') Contact Us
+        a(href='/properties') Properties
+        a(href='/signup') Sign up or sign in!
       .col.d-flex
         h4 USEFUL LINK
         a(href='') Online Store
@@ -80,5 +80,5 @@ header#header.header
         a.footer-btn(href='https://www.twitter.com')
           i.bx.bxl-twitter
 script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
-script(src='../public/js/slider.js')
-script(src='../public/js/index.js')
+script(src='/js/slider.js')
+script(src='/js/index.js')

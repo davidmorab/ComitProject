@@ -10,39 +10,39 @@ head
   // Swiper js
   link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
   // Custom StyleSheet
-  link(rel='stylesheet' href='../public/styles.css')
+  link(rel='stylesheet' href='/styles.css')
   title RentCA ComIT Project
-  link(rel='icon' type='image/x-icon' href='../public/images/favicon.ico')
+  link(rel='icon' type='image/x-icon' href='/images/favicon.ico')
 // Header
 header#header.header
   .navigation
     .nav-center.container.d-flex
-      a.logo(href='/')
+      a.logo(href='/index')
         h1 RentCA
       ul.nav-list.d-flex
         li.nav-item
-          a.nav-link(href='index.pug') Home
+          a.nav-link(href='/index') Home
         li.nav-item
-          a.nav-link(href='about.pug') About Us
+          a.nav-link(href='/about') About Us
         li.nav-item
-          a.nav-link(href='properties.pug') Properties
+          a.nav-link(href='/properties') Properties
         li.nav-item
-          a.nav-link(href='contact.pug') Contact
+          a.nav-link(href='/contact') Contact
         li.nav-item
-          a.nav-link(href='signup.pug') Sign Up
+          a.nav-link(href='/signup') Sign Up
       .hamburger
         i.bx.bx-menu-alt-left
   .hero
     .swiper-container.heroslider
       .swiper-wrapper
         .swiper-slide
-          img(src='../public/images/pic1.jpg' alt='')
+          img(src='/images/pic1.jpg' alt='')
         .swiper-slide
-          img(src='../public/images/pic2.jpg' alt='')
+          img(src='/images/pic2.jpg' alt='')
         .swiper-slide
-          img(src='../public/images/pic5.jpg' alt='')
+          img(src='/images/pic5.jpg' alt='')
         .swiper-slide
-          img(src='../public/images/pic6.jpg' alt='')
+          img(src='/images/pic6.jpg' alt='')
       .swiper-button-next
         i.bx.bx-chevron-right.swiper-icon
       .swiper-button-prev
@@ -61,10 +61,7 @@ section.section.rent
     .box
       .top
         .overlay
-          img(src='../public/images/pic1.jpg' alt='')
-        .pos
-          span FEATURED
-          span BUY
+          img(src='/images/pic1.jpg' alt='')
       .bottom
         p Luxury villa in Vancouver
         div
@@ -74,10 +71,7 @@ section.section.rent
     .box
       .top
         .overlay
-          img(src='../public/images/pic2.jpg' alt='')
-        .pos
-          span FEATURED
-          span BUY
+          img(src='/images/pic2.jpg' alt='')
       .bottom
         p Luxury villa in Calgary
         div
@@ -87,10 +81,7 @@ section.section.rent
     .box
       .top
         .overlay
-          img(src='../public/images/pic3.jpg' alt='')
-        .pos
-          span FEATURED
-          span BUY
+          img(src='/images/pic3.jpg' alt='')
       .bottom
         p Luxury villa in Edmonton
         div
@@ -100,10 +91,7 @@ section.section.rent
     .box
       .top
         .overlay
-          img(src='../public/images/pic4.jpg' alt='')
-        .pos
-          span FEATURED
-          span BUY
+          img(src='/images/pic4.jpg' alt='')
       .bottom
         p Luxury villa in Victoria
         div
@@ -113,10 +101,7 @@ section.section.rent
     .box
       .top
         .overlay
-          img(src='../public/images/pic5.jpg' alt='')
-        .pos
-          span FEATURED
-          span BUY
+          img(src='/images/pic5.jpg' alt='')
       .bottom
         p Luxury villa in Sidney
         div
@@ -126,10 +111,7 @@ section.section.rent
     .box
       .top
         .overlay
-          img(src='../public/images/pic6.jpg' alt='')
-        .pos
-          span FEATURED
-          span BUY
+          img(src='/images/pic6.jpg' alt='')
       .bottom
         p Luxury villa in Las Vegas
         div
@@ -139,10 +121,7 @@ section.section.rent
     .box
       .top
         .overlay
-          img(src='../public/images/pic2.jpg' alt='')
-        .pos
-          span FEATURED
-          span BUY
+          img(src='/images/pic2.jpg' alt='')
       .bottom
         p Luxury villa in Miami
         div
@@ -152,10 +131,7 @@ section.section.rent
     .box
       .top
         .overlay
-          img(src='../public/images/pic5.jpg' alt='')
-        .pos
-          span FEATURED
-          span BUY
+          img(src='/images/pic5.jpg' alt='')
       .bottom
         p Luxury villa in Montreal
         div
@@ -168,13 +144,13 @@ section.section.grid-layout
     h1 Popular Properties
   .wrapper.container
     .box.box1
-      img(src='../public/images/pic4.jpg' alt='')
+      img(src='/images/pic4.jpg' alt='')
     .box.box2
-      img(src='../public/images/vert3.jpg' alt='')
+      img(src='/images/vert3.jpg' alt='')
     .box.box3
-      img(src='../public/images/pic1.jpg' alt='')
+      img(src='/images/pic1.jpg' alt='')
     .box.box4
-      img(src='../public/images/pic3.jpg' alt='')
+      img(src='/images/pic3.jpg' alt='')
 // Contact
 section.section.contact
   .row
@@ -183,7 +159,7 @@ section.section.contact
       p
         | We love our customers and they can reach us any time of day we will
         | be at your service 24/7
-      a.btn.btn-1(href='contact.pug') Contact
+      a.btn.btn-1(href='/contact') Contact
     .col
       form(action='')
         div
@@ -199,10 +175,7 @@ section.section.rent
     .box
       .top
         .overlay
-          img(src='../public/images/pic2.jpg' alt='')
-        .pos
-          span FEATURED
-          span BUY
+          img(src='/images/pic2.jpg' alt='')
       .bottom
         p Luxury villa in Calgary
         div
@@ -212,10 +185,7 @@ section.section.rent
     .box
       .top
         .overlay
-          img(src='../public/images/pic4.jpg' alt='')
-        .pos
-          span FEATURED
-          span BUY
+          img(src='/images/pic4.jpg' alt='')
       .bottom
         p Luxury villa in Edmonton
         div
@@ -225,10 +195,7 @@ section.section.rent
     .box
       .top
         .overlay
-          img(src='../public/images/pic5.jpg' alt='')
-        .pos
-          span FEATURED
-          span BUY
+          img(src='/images/pic5.jpg' alt='')
       .bottom
         p Luxury villa in Montreal
         div
@@ -238,10 +205,7 @@ section.section.rent
     .box
       .top
         .overlay
-          img(src='../public/images/pic1.jpg' alt='')
-        .pos
-          span FEATURED
-          span BUY
+          img(src='/images/pic1.jpg' alt='')
       .bottom
         p Luxury villa in Victoria
         div
@@ -253,10 +217,10 @@ footer.footer
   .row
     .col.d-flex
       h4 INFORMATION
-      a(href='about.pug') About us
-      a(href='contact.pug') Contact Us
-      a(href='properties.pug') Properties
-      a(href='signup.pug') Sign up or sign in!
+      a(href='/about') About us
+      a(href='/contact') Contact Us
+      a(href='/properties') Properties
+      a(href='/signup') Sign up or sign in!
     .col.d-flex
       h4 USEFUL LINK
       a(href='') Online Store
@@ -268,10 +232,10 @@ footer.footer
         i.bx.bxl-facebook-square
       a.footer-btn(href='https://www.instagram.com')
         i.bx.bxl-instagram-alt
-      a.footer-btn(href='https://www.github.com/davidmorab')
+      a.footer-btn(href='https://www.github.com/davidmorab' )
         i.bx.bxl-github
       a.footer-btn(href='https://www.twitter.com')
         i.bx.bxl-twitter
 script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
-script(src='../public/js/slider.js')
-script(src='../public/js/index.js')
+script(src='/js/slider.js')
+script(src='/js/index.js')

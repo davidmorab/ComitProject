@@ -490,7 +490,7 @@ img {
 
 /* Contact */
 .contact {
-  background: url("./images/pic5.jpg") no-repeat fixed;
+  background: url("/images/pic5.jpg") no-repeat fixed;
   color: var(--white);
   padding: 10rem 20rem;
 }
@@ -749,7 +749,7 @@ footer .row {
 
 .contact-body{
   min-height: 100vh;
-  background: url(./images/Calgary\ contact.jpg);
+  background: url(/images/toa-heftiba-nrSzRUWqmoI-unsplash.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
