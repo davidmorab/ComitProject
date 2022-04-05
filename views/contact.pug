@@ -13,6 +13,16 @@ head
   link(rel='stylesheet' href='/styles.css')
   title RentCA Contact us
   link(rel='icon' type='image/x-icon' href='/images/favicon.ico')
+
+  script(type='text/javascript' src='https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js')
+  script(type='text/javascript').
+   (function() {
+   emailjs.init("p6JRM8e7h3UnwLhW3");
+   })();
+
+// User ID p6JRM8e7h3UnwLhW3
+  Access Token KO0ptD1CPPQHKMd8A4s5H
+
 // Header
 header#header.header
   .navigation
@@ -50,11 +60,15 @@ header#header.header
     .contact-form
       h2 Contact Us
       form.contact-box(action='' method='post')
-        input.text-box(type='text' name='name' placeholder='Your Name' required='')
-        input.text-box(type='email' name='email' placeholder='Your Email' required='')
-        textarea(name='message' rows='5' placeholder='Your Message' required='')
-        input.send-btn(type='submit' name='submit' value='Send')
+        input.text-box(type='text' name='name' placeholder='Your Name' class='Contactname')
+        input.text-box(type='email' name='email' placeholder='Your Email' class='Contactemail')
+        textarea(name='message' rows='5' placeholder='Your Message' class='Contactmessage')
+        input.send-btn(type='submit' name='submit' value='Send' class='Contactsend')
   // contact section end
+
+  
+  
 script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+script(src='https://unpkg.com/sweetalert/dist/sweetalert.min.js')
 script(src='/js/slider.js')
 script(src='/js/index.js')
