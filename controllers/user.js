@@ -6,7 +6,8 @@ const register = async(req, res) =>{
         const user = await User.create({
             firstName, lastName, email, password
         })
-        res.status(201).json({user});
+        const token = user.createJWT();
+        return res.status(201).json({user, token});
 
     } catch (error) {
         return res.status(401).json('Can not create user')
@@ -73,4 +74,15 @@ const deleteUser = async (req, res)=>{
     }
 };
 
-module.exports = {register, login, updateUser, deleteUser}
+const getUser = async(req, res)=>{
+    try {
+        const user = await User.findById(req.params.id);
+
+        res.status(200).json({user})
+    } catch (error) {
+        return res.status(401).json({msg:'No user found'})
+    }
+
+};
+
+module.exports = {register, login, getUser, updateUser, deleteUser}
