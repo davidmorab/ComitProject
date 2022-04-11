@@ -5,6 +5,7 @@ const dotenv = require('dotenv')
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const passportLocalMongoose = require("passport-local-mongoose");
+const cookieParser = require('cookie-parser')
 const app = express();
 const port = 3000;
 
@@ -70,3 +71,6 @@ app.get("/signup", (req, res) => {
 app.get("/signup", (req, res) => {
   res.render("register", {});
 });
+
+//cookie-parser
+app.use(cookieParser());

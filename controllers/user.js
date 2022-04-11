@@ -1,18 +1,23 @@
 const User = require('../models/users')
+const cookieParser = require('cookie-parser');
 
 const register = async(req, res) =>{
     const {firstName,lastName,email,password} = req.body
+    if (!firstName || !lastName || !password || !email) {return res.status(401).json({msg: "Please provide the credentials"})};
     try {
         const user = await User.create({
             firstName, lastName, email, password
         })
         const token = user.createJWT();
-        return res.status(201).json({user, token});
+        res.cookie('nToken', token, { maxAge: 900000, httpOnly: true });
+        return res.status(201).json({user,token})
+        res.redirect('/index')
+
 
     } catch (error) {
         return res.status(401).json('Can not create user')
     }
-}
+};
 
 const login = async(req, res)=>{
     const {email, password} = req.body;
@@ -34,8 +39,10 @@ const login = async(req, res)=>{
             return res.status(401).json('Invalid password')
         }
 
-        res.status(200).json({msg:"Logged in"})
-
+        const token = user.createJWT();
+        res.cookie('nToken', token, { maxAge: 900000, httpOnly: true });
+        return res.redirect(200, '/dashboard').json(user);
+        
     } catch (error) {
         return res.status(401).json(error)
     }
@@ -85,4 +92,9 @@ const getUser = async(req, res)=>{
 
 };
 
-module.exports = {register, login, getUser, updateUser, deleteUser}
+const logout = async(req, res)=>{
+    res.clearCookie('nToken');
+    return res.redirect('/index');
+}
+
+module.exports = {register, login, getUser, updateUser, deleteUser, logout}
